@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* highlight */
+
+.highlight .row div {
+	height: 510px;
+	transition: all 0.3s ease-in-out;
+}
+
+/* .row .col-12.col-md-6.col-lg-3 {
+	
+} */
+
+/* scroll bar */
+.highlight .row div::-webkit-scrollbar {
+	width: 5px;
+}
+
+.highlight .row div::-webkit-scrollbar-track {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.highlight .row div::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 10px;
+	outline: none;
+}
+
+.highlight .row div:hover {
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px);
+}
+
+/* character */
+
+.character .row div {
+	transition: all 0.3s ease-in-out;
+}
+
+.character .row div:not(:first-child):hover {
+	cursor: pointer;
+	transform: translateY(-7px);
+}
+
+/* blog */
+
+.blog .row div ul {
+	height: 500px;
+}
+
+.blog .row div ul::-webkit-scrollbar {
+	width: 5px;
+}
+
+.blog .row div ul::-webkit-scrollbar-track {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.blog .row div ul::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 10px;
+	outline: none;
+}
+
+.footer ~ span {
+	min-width: 50px;
+}

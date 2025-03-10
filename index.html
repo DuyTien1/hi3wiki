@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project 4 Bootstrap</title>
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" href="./assets/icons/icon.png" />
+		<!-- meta description -->
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<div class="container">
+				<a class="navbar-brand d-flex align-content-end" href="#">
+					<img src="./assets/images/logo.png" width="60" height="60" alt="logo" />
+					<h5 class="opacity-50 p-1 mt-2 align-self-end" style="font-family: 'Rancho'" ;>
+						HI3 WiKi
+					</h5>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#!">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!">Link</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-success" type="submit">
+							<ion-icon name="search-outline" class="mt-1" style="font-size: 1.8rem"></ion-icon>
+						</button>
+					</form>
+					<div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+						<a
+							href="#!"
+							class="btn btn-success m-3 d-flex align-items-center justify-content-center"
+							type="submit"
+							><ion-icon name="person-add-outline" class="me-1" style="font-size: 1.3rem"></ion-icon
+							>Sign Up</a
+						>
+						<a
+							href="#!"
+							class="btn btn-primary d-flex align-items-center justify-content-center"
+							type="submit"
+							><ion-icon name="log-in-outline" class="me-1" style="font-size: 1.6rem"></ion-icon
+							>Login</a
+						>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- navbar end -->
+
+		<!-- header -->
+		<header style="margin: 215px 0 140px 0" class="main-header py-5 bg-light header">
+			<div class="container">
+				<div class="row d-flex g-2">
+					<div class="col-12 col-lg-6">
+						<h1 class="fw-bold">Honkai Impact 3rd</h1>
+						<p class="fw-medium text-secondary opacity-75">
+							Honkai Impact 3rd là một game mobile nhập vai 3D hành động miễn phí được phát triển
+							bởi miHoYo. Đây là mục thứ ba trong sê-ri Honkai và là người kế thừa tinh thần của
+							Honkai Gakuen sử dụng nhiều nhân vật từ tựa game trước trong một câu chuyện hoàn toàn
+							riêng biệt. Trò chơi có điểm đáng chú ý là kết hợp nhiều thể loại từ hack và slash và
+							mô phỏng xã hội đến các yếu tố của mưa đạn, platforming, shoot 'em up và phiêu lưu qua
+							các chế độ chơi đơn và nhiều người chơi. Ngoài trò chơi trên thiết bị di động, cốt
+							truyện của Honkai Impact 3rd mở rộng qua nhiều phương tiện bổ sung bao gồm một bộ
+							anime nhiều bộ manhua và các video quảng cáo.
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Hiện tại tựa game đã được phát hành trên toàn cầu với 6 máy chủ , trong đó Trung Quốc
+							sẽ do MiHoYo phát hành, 5 máy chủ còn lại EU/NA (Quốc Tế), KR (Hàn Quốc), TW (Đài
+							Loan, Hồng Kông, Macao), SEA (Đông Nam Á và Australia), JP (Nhật Bản) sẽ do HoYoverse
+							phát hành.
+						</p>
+					</div>
+					<div class="col-12 col-lg-6">
+						<img
+							src="./assets/images/header.png"
+							alt="Bootstrap logo"
+							class="img-fluid rounded-1"
+						/>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- highlight -->
+		<section class="highlight py-5 mb-3" style="margin: 140px 0 140px 0">
+			<div class="container">
+				<div class="row">
+					<h2
+						class="fw-bold text-center mb-5 pb-3 border-bottom border-bottom-1 border-primary-subtle"
+					>
+						Honkai Impact 3rd có những gì?
+					</h2>
+				</div>
+				<div class="row flex-nowrap">
+					<div class="col-12 col-md-6 col-xl-3 overflow-auto">
+						<img
+							src="./assets/images/highlight1.png"
+							class="img-fluid rounded-1 w-100"
+							alt="highlight1"
+						/>
+						<h5 class="fw-bold mt-3 text-center">Cốt truyện chặt chẽ, xuất sắc</h5>
+						<p class="fw-medium text-secondary opacity-75">
+							Thế giới trong game tồn tại hai cực đối lập. Bao gồm nền văn minh của con người và
+							Băng hoại (Honkai), một thế lực siêu nhiên có mục đích đem lại cân bằng cho thế giới.
+							Loài người càng văn minh, tiến bộ thì Băng hoại càng mạnh mẽ và làm tha hoá mọi thứ.
+							Con người không chỉ khốn đốn chống chọi Băng hoại thú với cơ thể bất hoại, họ còn phải
+							chịu đựng dịch Zombie hoành hành. Khi nền văn minh phát triển cực hạn, Băng hoại sẽ
+							reset thế giới, đưa loài người về thời cổ đại. Trái đất đã trải qua nhiều vòng lặp như
+							vậy. Đến mốc thời gian mà HI3 diễn ra, nhân loại khám phá ra phương pháp dùng năng
+							lượng của Băng hoại để chống lại chính nó. Chỉ có cơ thể nữ nhi mới có thể tiếp nhận
+							chúng. Từ đó, lực lượng Valkyries đã hình thành, dưới quyền điều khiển của Toà thánh
+							Schicksal. Người chơi, với tư cách Thuyền trưởng của Chiến Hạm Hyperion tối tân ,sẽ
+							chỉ huy Valkyries trong cuộc chiến bảo vệ thế giới!! Valkyrie đầu tiên của Thuyền
+							trưởng là Kiana Kaslana. Một cô mèo đáng yêu với bodysuit xẻ ngực. Dưới ánh hoàng hôn
+							rực rỡ, cô di chuyển như ánh sao băng thiêu đốt lũ Băng hoại thú. Đồng đội của cô cũng
+							ra mắt đầy ấn tượng như vậy. Tưởng rằng hành trình từ đây sẽ là cuộc dạo chơi cùng các
+							waifu, vị thuyền trưởng mộng mơ nhận ngay một cú lật mặt đầy sửng sốt ngay ở cuối
+							Chương một. Và đây chỉ là màn dạo đầu cho tấn bi kịch đang chờ phía trước.
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Người chơi gặp Kiana lần đầu tiên trong khoảng thời gian hạnh phúc ngắn ngủi của cô
+							tại lực lượng Valkyries. Từ nhỏ, cô đã phải lìa xa cha mẹ mình, những chiến sĩ tuyến
+							đầu chống lại Băng hoại. Kiana một thân một mình lưu lạc khắp thế giới để tìm cha. Cô
+							dừng bước và tìm thấy bình yên tại học viện St.Freya, nơi đào tạo các Valkyrie. Nhưng
+							hạnh phúc ngắn chẳng tày gang. Cô bị đồng đội giao nộp cho kẻ thù giết mẹ. Để rồi phát
+							hiện ra mình chỉ là một sản phẩm nhân tạo, với mục đích trở thành thân xác cho sứ giả
+							Băng hoại, kẻ gián tiếp lấy đi mạng sống của mẹ mình. Cô gái tội nghiệp đánh mất đi
+							danh tính của mình rồi bị chiếm hữu. Người mà Kiana xem như người mẹ thứ hai, phải hy
+							sinh để ngăn cô huỷ diệt cả thế giới. Kiana bàng hoàng nhận ra mình đã làm tổn thương
+							những người thân yêu nhất. Bi kịch chồng chất bi kịch. Schicksal quay lưng và truy
+							đuổi cô. Ngay cả người mình yêu Kiana cũng không thể vươn tới được. Cô mèo nhỏ suýt
+							nữa đã tự tử ngay trước mắt người chơi.
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Giống như Kiana, mỗi nhân vật trong game đều mất đi người thân bởi Băng hoại, và đều
+							mang một số phận đau buồn. Ngay cả Villain của game cũng không phải ngoại lệ Giáo chủ
+							Otto Apocalypse là một người dịu dàng yêu thương cháu gái của mình. Nhưng hắn cũng là
+							người sẵn sàng vứt bỏ cả nhân tính, thoả hiệp với Băng hoại, hy sinh vô số người chỉ
+							để hồi sinh cô gái mà hắn yêu, một hiệp sĩ của Schicksal. Hắn vùi mình trong nghiên
+							cứu hàng trăm năm. Rồi ra sức lãnh đạo một nửa thế giới trong nỗ lực tìm phương thuốc
+							hồi sinh. Trong cơn mù quáng, hắn thốt lên: “Otto lương thiện ngày ấy đã chết theo
+							Kallen rồi.” Vậy hắn hồi sinh người mình yêu, vì ai? Vì hắn, một kẻ diệt chủng, hay vì
+							Kallen, người không yêu hắn và đã thề bảo vệ loài người? Tuy vậy, câu chuyện của game
+							buồn nhưng lại không tuyệt vọng. Sợi chỉ đỏ kết nối những mảnh đời vụn vỡ là hy vọng
+							sống còn cùng niềm tin vào một tương lai tốt đẹp của các cô gái. Dẫu cho Băng hoại ăn
+							mòn cơ thể từng ngày, các cô vẫn sống một cách vô tư, vẫn tin tưởng vào sự dẫn dắt của
+							Thuyền trưởng, và vẫn yêu một cách say đắm.
+						</p>
+					</div>
+					<div class="col-12 col-md-6 col-xl-3 overflow-auto">
+						<img
+							src="./assets/images/highlight2.png"
+							class="img-fluid rounded-1"
+							alt="highlight2"
+						/>
+						<h5 class="fw-bold mt-3 text-center">Sự kiện thú vị, cập nhật liên tục</h5>
+						<p class="fw-medium text-secondary opacity-75">
+							Không chỉ là game hành động đơn thuần, HI3 vẫn có một số sự kiện đặc biệt “chiều lòng
+							game thủ” với đủ thể loại game giải trí nhẹ nhàng như “hẹn hò” cùng nhân vật, bắn súng
+							hoặc mở các cốt truyện phụ hài hước theo các ngày lễ đặc biệt ở thời điểm đó.
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Đối với người anh em Genshin Impact được chiều chuộng hơn trong thời gian gần đây, nhà
+							phát hành Mihoyo cũng đã “tranh thủ” thực hiện một màn collab với chính mình khi đưa
+							Honkai Impact 3rd x Genshin Impact để đưa hai cộng đồng game thủ đến với nhau. Trong
+							sự kiện này, HI3 cũng khá hào phóng khi tặng hẳn nhân vật Fischl vào quà thưởng đăng
+							nhập dành cho tất cả game thủ mới lẫn cũ, ngoài ra còn cốt truyện phụ cho Keqing và
+							Sói Ca cho mọi người trải nghiệm.
+						</p>
+					</div>
+					<div class="col-12 col-md-6 col-xl-3 overflow-auto mt-sm-5 mt-xl-0">
+						<img
+							src="./assets/images/highlight3.jpg"
+							class="img-fluid rounded-1"
+							alt="highlight3"
+						/>
+						<h5 class="fw-bold mt-3 text-center">Gameplay đơn giản, dễ tiếp cận</h5>
+						<p class="fw-medium text-secondary opacity-75">
+							Ấn tượng đầu tiên mà Honkai Impact 3rd (HI3) mang lại cho người chơi là cảm giác quen
+							thuộc của chiến trường 3D rộng rãi để tung hoành chiến đấu nhưng không quá rộng khiến
+							bạn lạc đường hay tìm hướng đi. Mọi thứ trong game đều được đơn giản hóa đến mức ai
+							cũng có thể làm quen được với game ngay lập tức theo lối chơi chặt chém cực đã tay,
+							tuy nhiên Honkai Impact 3rd lại có một cơ chế làm nên sự hấp dẫn cho các game thủ
+							hardcore – Né và làm chậm thời gian.
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Kỹ năng Né trong Honkai Impact 3rd có thể tương tự như khả năng né đòn y hệt series
+							game Bayonetta khi bạn thực hiện né đòn đánh của đối thủ trước khi bị đánh sẽ tạm dừng
+							thời gian xung quanh để bạn tung combo thỏa thích vào đối thủ - và cứ thế mà lặp lại.
+							Đặc biệt, mỗi nhân vật trong HI3 đều có kĩ năng Né riêng khiến bạn cần phải luyện tập
+							kết hợp cơ chế (mechanic), hitbox và căn thời gian thật chuẩn để có thể Né đòn (thay
+							vì chỉ đứng tank và đập quái văng não).
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Không chỉ dừng lại ở đó, HI3 còn có một hệ thống nhân vật khắc chế lẫn nhau và bộ kĩ
+							năng có thể kết nối combo với nhau, bắt buộc game thủ phải tự tạo ra từng nhóm riêng
+							biệt để chiến đấu theo các boss với cơ chế/hệ đặc biệt chứ không thể dùng 1 team chiến
+							cả game được. Với số lượng nhân vật đông đảo được chia ra 5 hệ khắc chế lẫn nhau, mỗi
+							nhân vật lại có 6 nhánh kỹ năng và dùng vũ khí riêng của mình từ đánh gần đến tầm xa,
+							từ đánh lẻ đến gây AoE, lại chia ra sát thương vật lý và nguyên tố do đó combo kết hợp
+							team của bạn sẽ tùy theo lối chơi của mỗi game thủ.
+						</p>
+					</div>
+					<div class="col-12 col-md-6 col-xl-3 overflow-auto mt-sm-5 mt-xl-0">
+						<img
+							src="./assets/images/highlight4.png"
+							class="img-fluid rounded-1"
+							alt="highlight4"
+						/>
+						<h5 class="fw-bold mt-3 text-center">Đồ họa đẹp mắt, đỉnh cao</h5>
+						<p class="fw-medium text-secondary opacity-75">
+							Với chất lượng đồ họa không thua kém gì các tựa game AAA trên nền tảng PC, HI3 vẫn
+							chưa khiến game thủ thất vọng về các nhân vật mới cũng như hiệu ứng kĩ năng nổ tràn
+							màn hình của mình. Không giới hạn chỉ ở mobile, bản port PC cho phép nâng đồ hoạ lên
+							4K kèm hiệu ứng đổ bóng, slow-mo, HDR không hề thua kém bất cứ tựa game console nào.
+						</p>
+						<p class="fw-medium text-secondary opacity-75">
+							Thay vì chạy đua theo công nghệ Unreal Engine 4 nặng nề và yêu cầu cấu hình máy quá
+							cao, HI3 vẫn giữ phong cách Anime gần gũi và cực nhẹ, dĩ nhiên vẫn cho game thủ tăng
+							tối đa cấu hình theo các dòng điện thoại gaming hiện nay. Đó cũng là lý do khiến HI3
+							chạy khá mượt dù nhịp hành động trong game rất nhanh, hiệu ứng tràn ngập nhưng bạn vẫn
+							có thể thấy rõ từng hạt mưa rơi trong khi làm chậm thời gian.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- carousel -->
+		<section class="carousel" style="margin: 140px 0 140px 0">
+			<div class="container">
+				<h2 class="text-center mb-5">Hình Ảnh Nổi Bật</h2>
+				<div id="carousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./assets/images/bronya.png" class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/images/elysia.png" class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/images/kevin.png" class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/images/durandal.png" class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/images/fuhua.png" class="d-block w-100" alt="..." />
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carousel"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carousel"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- information -->
+		<section class="information" style="margin: 140px 0">
+			<h2 class="text-center mb-5">Thông Tin Về Trò Chơi</h2>
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-3">
+						<ul class="list-group mb-3">
+							<li
+								class="list-group-item bg bg-secondary fw-bold d-flex align-items-center justify-content-between"
+							>
+								Phiên bản hiện tại
+								<span class="badge text-bg-secondary bg bg-warning rounded-pill">4</span>
+							</li>
+							<li class="list-group-item">
+								Phiên bản 8.1 - "Trống Rộn Vang Nguyện Cầu Năm Mới" (20/2 ~ 24/4)!
+							</li>
+						</ul>
+					</div>
+					<div class="col-9">
+						<ul class="list-group">
+							<li class="list-group-item bg bg-secondary fw-bold">Thông tin đáng chú ý</li>
+							<li class="list-group-item">
+								★ Nhân Vật cấp S thuộc tính Bụi Sao mới - "Ba-Dum! Fiery Wishing Star". "Ba-Dum!
+								Fiery Wishing Star" là nhân vật thuộc Bụi Sao, gây ST Nguyên Tố Lửa, sử dụng vũ khí
+								Súng Đôi. Trong chiến đấu, Kiana sẽ vung gậy, cùng Bánh Tổ lên sân khấu biểu diễn!
+								Với vai trò là sứ giả năm mới, Kiana có những cách ứng phó độc đáo và tràn đầy không
+								khí lễ hội, dù đối mặt với kẻ địch đơn lẻ hay cả quần thể. Chỉ nghe thấy vài tiếng
+								"bùm → bùm bùm ↗ bùm", lũ quái vật liền ngã lăn ra ngủ, chúc chúng có một giấc mơ
+								đẹp~.
+							</li>
+							<li class="list-group-item">
+								★ Chương EX 7 Cốt Truyện Chính Phần 2: "Thần Linh Không Nơi Cầu Nguyện" Bầu trời đêm
+								nơi bình minh chưa từng đến, chỉ có vết thương mang tên những vì sao. Cập nhật
+								chương EX cốt truyện chính mới "Thần Linh Không Nơi Cầu Nguyện", trải nghiệm cốt
+								truyện chính có thể nhận Pha Lê, Lăng Kính Cội Nguồn, Ý Chí Viễn Cổ...
+							</li>
+							<li class="list-group-item">
+								★ Event Chủ Đề: "Đang Diễn Ra: Dạo Chơi Vườn Ước Nguyện~" Nơi này không có phiền
+								muộn hay sầu não, chỉ toàn niềm vui và hy vọng... Khoan đã! Sao lại có người rơi
+								nước mắt nhỉ?!. Event chủ đề "Đang Diễn Ra: Dạo Chơi Vườn Ước Nguyện~" khai mở,
+								Thuyền Trưởng có thể thông qua việc mua Búp Bê Năm Mới, kích hoạt Duyên Ước, chọn
+								Bùa Bảo Vệ... để giúp đội hình phát triển nhanh chóng! Cố gắng đánh bại Quái Vật Năm
+								Mới trong mỗi hiệp, và giữ cho điểm Sức Sống của mình tồn tại đến phút cuối cùng
+								nhé~ Tham gia event, có thể nhận trang phục mới của Valkyrie Blastmetal "Tuần Tra
+								Viên Gâu Gâu", Huân Chương Ngôi Sao Giải Trí, Pha Lê, Lăng Kính Cội Nguồn...~
+							</li>
+							<li class="list-group-item">
+								★ Event Chủ Đề: "Phòng Chat Lễ Mừng 2025" Khai mở "Phòng Chat Lễ Mừng 2025", hãy
+								cùng Kiana và những người bạn chào đón lễ mừng nào~ Tham gia event nhận thưởng Pha
+								Lê, Lăng Kính Cội Nguồn, Hộp Quà Chi Viện Viễn Cổ-2025, Hộp Quà Chi Viện Bồi
+								Dưỡng-2025, Huân Chương Vạn Sự May Mắn...!
+							</li>
+
+							<li class="list-group-item">
+								★ Event Đăng Nhập: "Một Chương Nhạc Mới" Mở Event đăng nhập "Một Chương Nhạc Mới",
+								trong thời gian event tích lũy đăng nhập 8 ngày nhận Rương Valkyrie Cấp S-2025, Thẻ
+								Tiếp Tế Nhân Vật, Đai Kỷ Niệm Tiếng Trống Báo Thịnh Vượng, Pha Lê.
+							</li>
+							<li class="list-group-item">
+								★ Event Tích Lũy Tiêu Phí Tròn Năm Tham gia Tiếp Tế tích lũy tiêu hao Pha Lê ×30000,
+								có thể trực tiếp nhận trang phục mới của Lunar Vow: Crimson Love "Hương Sắc Tràn
+								Đầy"! Ngoài ra còn có thể đổi Thẻ Nhân Vật Herrscher of Rebirth, Dấu Ấn Tăng Cấp
+								Herrscher of Rebirth, Dấu Ấn Tăng Cấp Dreamweaver...!
+							</li>
+
+							<li class="list-group-item">
+								★ Người Cộng Tác cấp S mới - "Theresa Apocalypse" Theresa Apocalypse là Người Cộng
+								Tác tương thích Nguyên Lý Thăng Biến, khi nhân vật mở trạng thái "Bạo Phát Vòng
+								Sao", Theresa sẽ tung TC Cộng Tác, thu hút địch xung quanh và gây ST Nguyên Tố Lôi
+								cho địch trong phạm vi. Nếu do Ba-Dum! Fiery Wishing Star kích hoạt trạng thái "Bạo
+								Phát Vòng Sao", TC Cộng Tác sẽ gây thêm ST Nguyên Tố Lôi. Ngoài ra, khi kích hoạt
+								Nguyên Lý Thăng Biến, Tất Cả ST địch phải chịu từ QTE và Skill Vật Đổi Sao Dời sẽ
+								tăng. Sau khi một nhân vật trong đội dùng skill Vật Đổi Sao Dời đánh trúng mục tiêu,
+								Theresa sẽ dùng Giáo Ánh Sáng Chi Viện, gây ST Nguyên Tố Lôi cho địch.
+							</li>
+							<li class="list-group-item">
+								★ Trang bị mới tương thích "Herrscher of Human: Ego" - Chìa Khóa Thần "Bảo Hộ Thuần
+								Khiết" &amp; Set Vết Thánh "Nhà Thơ Lập Pháp" Chìa Khóa Thần tương thích Herrscher
+								of Human: Ego "Bảo Hộ Thuần Khiết" và Chìa Khóa Thần siêu hạn "Bảo Hộ Thuần Khiết:
+								Nghi Lễ Truyền Thừa" ra mắt! Khi Herrscher of Human: Ego trang bị sẽ kích hoạt Giới
+								Hạn Vòng Sao - Bánh Xe Định Mệnh, và thay đổi chiêu thức Skill Vũ Khí.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- character -->
+		<section class="character bg bg-light" style="padding: 140px 0">
+			<div class="container">
+				<div class="row gx-5">
+					<div class="col-12">
+						<h2 class="text-center mb-5">Nhân Vật</h2>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./assets/images/kiana.png"
+							class="w-100 object-fit-cover rounded rounded-3 border border-3 border-dark"
+							width="100%"
+							alt=""
+							height="420px"
+						/>
+						<span class="fw-bold text-center fs-3 d-block text-capitalize mt-2">kiana kaslana</span>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./assets/images/mei-back.png"
+							class="w-100 object-fit-cover rounded rounded-3 border border-3 border-dark"
+							height="420px"
+							alt=""
+						/>
+						<span class="fw-bold text-center fs-3 d-block text-capitalize mt-2">raiden mei</span>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./assets/images/bronya-back.png"
+							class="w-100 object-fit-cover rounded rounded-3 border border-3 border-dark"
+							height="420px"
+							alt=""
+						/>
+						<span class="fw-bold text-center fs-3 d-block text-capitalize mt-2"
+							>bronya zaychik</span
+						>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<nav class="d-flex align-content-center justify-content-center" aria-label="...">
+						<ul class="pagination pagination-sm">
+							<li class="page-item active" aria-current="page">
+								<span class="page-link">1</span>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<!-- blog -->
+		<section class="blog" style="margin: 140px 0">
+			<div class="container">
+				<div class="row gx-5">
+					<div class="col-12">
+						<h2 class="text-center mb-5">Blog</h2>
+					</div>
+				</div>
+				<div class="row gx-3">
+					<div class="col-4">
+						<ul class="list-group border border-2 border-dark overflow-auto">
+							<li
+								class="p-4 list-group-item bg bg-secondary fw-bold d-flex align-items-center justify-content-center"
+							>
+								Hướng dẫn người chơi mới
+								<img class="ms-2" width="30px" src="./assets/icons/newbie.png" alt="" />
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Hướng dẫn cốt truyện
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Sử dụng thể lực sao cho hợp lý?
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Cách kiếm Crystals và tiêu hợp lý
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Một số cơ chế trong trò chơi nên biết!
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Một số lời khuyên từ oldbies :)
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul class="list-group border border-2 border-dark overflow-auto">
+							<li
+								class="p-4 list-group-item bg bg-secondary fw-bold d-flex align-items-center justify-content-center"
+							>
+								Elysian Realm
+								<img class="ms-2" width="30px" src="./assets/icons/must-have.png" alt="" />
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Những nhân vật nên dùng
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Một số mẹo nhỏ khi vượt Elysian Realm
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Khắc ấn và nâng cấp khắc ấn
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul class="list-group border border-2 border-dark overflow-auto">
+							<li
+								class="p-4 list-group-item bg bg-secondary fw-bold d-flex align-items-center justify-content-center"
+							>
+								Hướng dẫn bồi dưỡng nhân vật
+								<img class="ms-2" width="30px" src="./assets/icons/pro.png" alt="" />
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Kiana - Ba-Dum! Fiery Wishing Star
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Durandal - Reign Solaris
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Sparkle- Thousand-Faced Maestro: Cameo!
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Vita - Lone Planetfarer
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Senadina - Deepspace Anchor: First Light
+								</a>
+							</li>
+							<li class="list-group-item list-group-item-action p-3">
+								<a class="d-block text-decoration-none text-dark text-center text-light" href="#">
+									Songque - Jovial Deception: Shadowdimmer
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- about us -->
+		<section class="about" style="margin: 140px 0">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+						<h2 class="text-center mb-2 w-50">Về Tôi</h2>
+						<p class="text-center text-dark w-50">
+							Website được thành lập bằng sở thích cá nhân của tôi, những thông tin và hình ảnh ở
+							đây đều được sưu tầm trên mạng. Chúc các bạn truy cập website vui vẻ. Mọi thắc mắc xin
+							vui lòng liên hệ với tôi qua gmail:
+							<a href="#!">example@gmail.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer bg-secondary bg-opacity-10" style="margin-top: 140px">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-4 d-flex align-items-center justify-content-center">
+						<img src="./assets/images/logo.png" alt="" />
+						<h5 class="opacity-50 p-1 mt-2" style="font-family: 'Rancho'" ;>HI3 WiKi</h5>
+					</div>
+					<div class="col-2">
+						<div class="d-flex flex-column">
+							<p class="text-white fs-4 text-bold">Chính Sách</p>
+							<p class="text-white-50">FAQs</p>
+							<p class="text-white-50">Hỏi đáp</p>
+							<p class="text-white-50">Công việc</p>
+							<p class="text-white-50">Liên Hệ</p>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="d-flex flex-column">
+							<p class="text-white fs-4 text-bold">Chính Sách</p>
+							<p class="text-white-50">FAQs</p>
+							<p class="text-white-50">Hỏi đáp</p>
+							<p class="text-white-50">Công việc</p>
+							<p class="text-white-50">Liên Hệ</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<p class="text-white fs-4 text-bold text-center">Theo dõi tôi</p>
+						<div class="row d-flex align-items-center justify-content-center">
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="col-12 d-flex align-items-center justify-content-center">
+									<a id="facebook" href="#!"
+										><ion-icon name="logo-facebook" class="text-white fs-2"></ion-icon
+									></a>
+									<span for="facebook" class="text-white text-capitalize ms-2 pb-1 w-25"
+										>facebook</span
+									>
+								</div>
+								<div class="col-12 d-flex align-items-center justify-content-center">
+									<a id="instagram" href="#!"
+										><ion-icon name="logo-instagram" class="text-white fs-2"></ion-icon
+									></a>
+									<span for="instagram" class="text-white text-capitalize ms-2 pb-1 w-25"
+										>instagram</span
+									>
+								</div>
+								<div class="col-12 d-flex align-items-center justify-content-center">
+									<a id="youtube" href="#!"
+										><ion-icon name="logo-youtube" class="text-white fs-2"></ion-icon
+									></a>
+									<span for="youtube" class="text-white text-capitalize ms-2 pb-1 w-25"
+										>youtube</span
+									>
+								</div>
+								<div class="col-12 d-flex align-items-center justify-content-center">
+									<a id="tiktok" href="#!"
+										><ion-icon name="logo-tiktok" class="text-white fs-2"></ion-icon
+									></a>
+									<span for="tiktok" class="text-white text-capitalize ms-2 pb-1 w-25">tiktok</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- copyright -->
+		<div class="copyright p-3 bg-dark">
+			<h5 class="pt-2 text-center text-white">Copyright © 2025 niTe</h5>
+		</div>
+
+		<!-- bootstrap js -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<!-- js -->
+		<script src="./assets/js/script.js"></script>
+		<!-- ion icons -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
